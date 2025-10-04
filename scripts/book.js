@@ -38,7 +38,7 @@ export const createCard = (book) => {
 
   const cover = document.createElement('img')
   cover.className = 'card__cover'
-  cover.src = book.imageLinks?.thumbnail ? book.imageLinks.thumbnail : '../images/generic.png'
+  cover.src = book.imageLinks?.thumbnail ? book.imageLinks.thumbnail : 'images/generic.png'
   cover.alt = 'Thumbnail'
   card.appendChild(cover)
 

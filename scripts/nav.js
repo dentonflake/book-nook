@@ -9,6 +9,6 @@ headerExpand.addEventListener('click', () => {
   nav.classList.toggle('show');
   isOpen = !isOpen;
   
-  headerIcon.src = isOpen ? './images/close.png' : './images/burger.png';
+  headerIcon.src = isOpen ? 'images/close.png' : 'images/burger.png';
   headerIcon.alt = isOpen ? 'close menu' : 'open menu';
 });

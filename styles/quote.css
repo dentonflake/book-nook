@@ -1,0 +1,37 @@
+
+.quote {
+  margin: var(--space-7);
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+.quote__header {
+  font-size: var(--text-xl);
+}
+
+.quote__container {
+  padding: var(--space-7);
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-md);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  border-right: solid var(--space-4) var(--color-primary-500);
+  background-color: #fff;
+}
+
+.quote__text {
+  font-size: var(--text-lg);
+  line-height: var(--text-xl--line-height);
+  color: var(--color-neutral-950);
+}
+
+.quote__author {
+  font-style: italic;
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
+  text-align: end;
+  color: var(--color-neutral-700);
+}

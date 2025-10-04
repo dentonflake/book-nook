@@ -1,0 +1,132 @@
+
+.book {
+  margin: var(--space-7);
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+.book__header {
+  font-size: var(--text-xl);
+}
+
+.book__container {
+  padding: var(--space-9);
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-md);
+  background-color: #fff;
+}
+
+.book__form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+}
+
+.book__search {
+  padding: var(--space-4);
+  box-shadow: var(--shadow-md);
+  border: none;
+  border-radius: var(--radius-md);
+  min-width: 0;
+  grid-column: 1 / 5;
+  font-size: var(--text-base);
+}
+
+.book__submit {
+  padding: var(--space-4);
+  box-shadow: var(--shadow-md);
+  border: none;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary-500);
+  grid-column: 1 / 5;
+  font-size: var(--text-base);
+  color: var(--color-neutral-050);
+}
+
+.book__submit:hover {
+  background-color: var(--color-primary-600);
+}
+
+.book__results {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+  margin-top: var(--space-7);
+}
+
+.card {
+  padding: var(--space-7);
+  background-color: #fff;
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  border-bottom: solid var(--space-4) var(--color-primary-500);
+}
+
+.card__title {
+  text-decoration: none;
+  color: var(--color-neutral-950);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.card__title:hover {
+  text-decoration: underline;
+}
+
+.card__authors {
+  text-align: center;
+}
+
+.card__cover {
+  width: 50%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.card__tags {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card__tag {
+  background-color: var(--color-neutral-100);
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 650px) {
+
+  .book__results {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .book__filters {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .book__title {
+    grid-column: auto;
+  }
+}
+
+@media (min-width: 950px) {
+
+  .book__results {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

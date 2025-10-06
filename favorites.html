@@ -4,33 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Book Nook</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles/globals.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/footer.css">
-
-  <script type="module" src="scripts/index.js" defer></script>
+  <link rel="stylesheet" href="styles/quote.css">
+  <link rel="stylesheet" href="styles/book.css">
+  <script type="module" src="scripts/favorites.js" defer></script>
   <script src="scripts/nav.js" defer></script>
 </head>
 
 <body>
-
   <header class="header">
     <div class="header__brand">
-      <img class="header__logo" src="/images/logo.png" alt="The Book Nook logo">
+      <img class="header__logo" src="images/logo.png" alt="The Book Nook logo">
       <span class="header__name">Book Nook</span>
     </div>
-
     <button class="header__expand" id="nav-toggle">
-      <img class="header__icon" id="nav-icon" src="/images/burger.png" alt="Icon of hamburger menu">
+      <img class="header__icon" id="nav-icon" src="images/burger.png" alt="Icon of hamburger menu">
     </button>
-
     <nav class="header__nav" id="nav">
       <ul>
         <li><a href="index.html" class="header__link">HOME</a></li>
@@ -38,8 +33,17 @@
       </ul>
     </nav>
   </header>
+  
+  <main class="main">
 
-  <main></main>
+    <section class="book">
+      <h2 class="book__header">FAVORITES</h2>
+      <div class="book__results" id="results">
+        <p>You do not have any books saved</p>
+      </div>
+    </section>
+    
+  </main>
 
   <footer class="footer">
 
